@@ -1,10 +1,10 @@
 export default {
   "normal": {
-    "--background-color1": "#1e1e1e",
+    "--background-color1": "#000000",
     "--background-color2": "#252526",
-    "--background-color3": "#161616",
+    "--background-color3": "#000000",
     "--background-color4": "#3a3a3a",
-    "--background-color5": "#222222",
+    "--background-color5": "#000000",
     "--background-color6": "black",
     "--background-color7": "gray",
     "--background-color8": "#171717",
@@ -27,7 +27,7 @@ export default {
     "--toggle-knob-active": "#fff"
   },
   "high-contrast": {
-    "--background-color1": "#1e1e1e",
+    "--background-color1": "#000000",
     "--background-color2": "#252526",
     "--background-color3": "#161616",
     "--background-color4": "#3a3a3a",
