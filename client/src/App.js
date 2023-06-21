@@ -37,7 +37,7 @@ import { ModelService } from "./services/ModelService";
 import { exportService } from "./services/ExportService";
 import themeVariables from "./theme/variables";
 import { darkFabricTheme, darkFabricThemeHighContrast } from "./theme/DarkFabricTheme";
-import logo from "./assets/Logo_Only.png";
+import logo from "./assets/logo192pqy.png";
 
 import "prismjs/components/prism-json";
 import "prismjs/themes/prism.css";
@@ -101,7 +101,7 @@ class App extends Component {
       isLoading: false,
       layout: {
         modelViewerWidth: 0,
-        drawerHeight: 20,
+        drawerHeight: 0,
         showImport: false,
         importFile: null,
         showTabularView: false,
@@ -458,7 +458,7 @@ class App extends Component {
                 <Text as={"h2"} variant={'small'} className="query-explorer-header" aria-label={this.props.t("app.goldenLayoutConfig.queryComponent")}>{this.props.t("app.goldenLayoutConfig.queryComponent")}</Text>
                 <QueryComponent onQueryExecuted={() => this.handleMainContentPivotChange('graph-viewer')}/>
               </div>
-              <div className="main-area">
+              <div className="main-area" style={{ height: "100%" }}>
                 <Stack horizontal style={{ height: "100%" }}>
                   <div style={{width: `${layout.modelViewerWidth}%` }}>
                     <Pivot aria-label="Use left and right arrow keys to navigate" selectedKey={leftPanelSelectedKey} className="tab-pivot" headersOnly onLinkClick={this.handleLeftPanelPivotChange}>
