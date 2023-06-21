@@ -519,7 +519,7 @@ export class ConsoleComponent extends Component {
   render() {
     return (
       <Terminal
-        welcomeMessage="Azure Digital Twins Explorer command prompt"
+        welcomeMessage="Propinquity CIP Engine command prompt"
         commands={this.commands}
         contentClassName="cc-content"
         inputClassName="cc-input"

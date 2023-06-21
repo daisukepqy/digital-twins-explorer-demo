@@ -37,7 +37,7 @@ import { ModelService } from "./services/ModelService";
 import { exportService } from "./services/ExportService";
 import themeVariables from "./theme/variables";
 import { darkFabricTheme, darkFabricThemeHighContrast } from "./theme/DarkFabricTheme";
-import logo from "./assets/logo192.png";
+import logo from "./assets/Logo_Only.png";
 
 import "prismjs/components/prism-json";
 import "prismjs/themes/prism.css";
@@ -100,7 +100,7 @@ class App extends Component {
       exportedQuery: "",
       isLoading: false,
       layout: {
-        modelViewerWidth: 15,
+        modelViewerWidth: 0,
         drawerHeight: 20,
         showImport: false,
         importFile: null,
@@ -437,8 +437,8 @@ class App extends Component {
             <div role="banner" className="header" >
               <Stack horizontal className="top-bar">
                 <div>
-                  <img src={logo} width={20} height={20} alt="" />
-                  <h1 className="top-bar-title">Azure Digital Twins Explorer</h1>
+                  <img src={logo} width={32} height={32} alt="" />
+                  <h1 className="top-bar-title">Propinquity CIP Engine</h1>
                 </div>
                 <AppCommandBar optionalComponents={optionalComponentsState}
                   optionalComponentsState={optionalComponentsState}
@@ -458,7 +458,7 @@ class App extends Component {
                 <Text as={"h2"} variant={'small'} className="query-explorer-header" aria-label={this.props.t("app.goldenLayoutConfig.queryComponent")}>{this.props.t("app.goldenLayoutConfig.queryComponent")}</Text>
                 <QueryComponent onQueryExecuted={() => this.handleMainContentPivotChange('graph-viewer')}/>
               </div>
-              <div className="main-area" style={{ height: `calc(100vh - 155px - ${(layout.showConsole || layout.showOutput) ? layout.drawerHeight : 0}%)` }}>
+              <div className="main-area">
                 <Stack horizontal style={{ height: "100%" }}>
                   <div style={{width: `${layout.modelViewerWidth}%` }}>
                     <Pivot aria-label="Use left and right arrow keys to navigate" selectedKey={leftPanelSelectedKey} className="tab-pivot" headersOnly onLinkClick={this.handleLeftPanelPivotChange}>

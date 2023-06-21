@@ -21,11 +21,11 @@
             "console": "Console",
             "output": "Output"
         },
-        "errorPage": "Azure Digital Twins Explorer has encountered an error. Please refresh the page to continue."
+        "errorPage": "Propinquity CIP Engine has encountered an error. Please refresh the page to continue."
     },
     "errorMessages": {
         "error": "Error",
-        "chinaSupport": "The Azure Digital Twins Explorer is not fully supported in China yet.",
+        "chinaSupport": "The Propinquity CIP Engine is not fully supported in China yet.",
         "incompatibleLanguageVersion": "This ADT Instance contains DTDL v3 models, which the ADT Explorer does not yet fully support.",
         "closeButton": "Close alert"
     },

@@ -97,7 +97,7 @@ body {
   .top-bar-title {
     vertical-align: top;
     padding-left: 16px;
-    font-size: 15px;
+    font-size: 24px;
     display: inline;
     font-weight: normal;
   }
@@ -139,14 +139,14 @@ body {
   border: 1px solid $inputOutlineColor;
   border-radius: 0;
   color: $textColorLight1;
-  font-size: 14px;
+  font-size: 21px;
 }
 
 .ms-Dropdown-item {
   background: $inputColor;
   border-radius: 0;
   color: $textColorLight1;
-  font-size: 14px;
+  font-size: 21px;
 }
 
 .featured-dropdown {
@@ -154,7 +154,7 @@ body {
     background: $buttonColor;
     border-radius: 0;
     color: $textColorLight1;
-    font-size: 14px;
+    font-size: 21px;
     border: none;
     text-align: center;
   }
@@ -163,7 +163,7 @@ body {
     background: $inputColor;
     border-radius: 0;
     color: $textColorLight1;
-    font-size: 14px;
+    font-size: 21px;
   }
 }
 
@@ -301,14 +301,14 @@ code[class*="language-"], pre[class*="language-"] {
   }
   h4 {
     color: $textColorLight2;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 3px;
   }
   p {
     color: $textColorLight1;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 21px;
   }
   ul {
     list-style: none;
@@ -317,13 +317,14 @@ code[class*="language-"], pre[class*="language-"] {
 
     li {
       padding: 2px 8px 2px 4px;
-      font-size: 13px;
+      font-size: 19px;
     }
   }
 }
 .top-area{
   background-color: var(--background-color5);
   position: relative;
+  display: none;
 }
 .query-explorer-header{
   position: absolute;
@@ -353,6 +354,7 @@ code[class*="language-"], pre[class*="language-"] {
   height: 100%;
 }
 .tab-pivot {
+  //display:none;
   div[role=tablist] {
     background-color: $backgroundColor4;
     >div {
@@ -361,7 +363,7 @@ code[class*="language-"], pre[class*="language-"] {
   }
   .ms-Pivot-link {
     height: 36px;
-    font-size: 12px;
+    font-size: 18px;
     &.is-selected{
       font-weight: bolder;
     }
